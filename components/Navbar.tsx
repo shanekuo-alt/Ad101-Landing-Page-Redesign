@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import Image from "next/image";
 
 const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
@@ -34,9 +35,16 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="/"
-          className="font-display text-[15px] font-medium tracking-tight transition-colors duration-300"
+          className="flex items-center gap-2 font-display text-[15px] font-medium tracking-tight transition-colors duration-300"
           style={{ color: scrolled ? "#2f2f2f" : "#2f2f2f" }}
         >
+          <Image
+            src="/ad101-logo.png"
+            alt="Ad101 logo"
+            width={28}
+            height={28}
+            className="h-7 w-auto"
+          />
           Ad101
         </a>
 
