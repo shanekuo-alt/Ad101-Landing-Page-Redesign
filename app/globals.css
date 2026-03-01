@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* ── Color Tokens (Source: Color_Style_Guide.md) ── */
+  --color-base: #F5F5F5;
+  --color-surface: #FFFFFF;
+  --color-section: #EBEBEB;
+  --color-dark-primary: #1E2024;
+  --color-dark-text: #2f2f2f;
+  --color-green-highlight: #4A7C52;
+  --color-gold-cta: #C8A650;
+  --color-sage-light: #8FA88E;
+
+  /* ── Font Families ── */
+  --font-display: var(--font-source-serif-4), "Georgia", serif;
+  --font-body: var(--font-dm-sans), "Helvetica Neue", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ── Base Styles ── */
+body {
+  background-color: var(--color-base);
+  color: var(--color-dark-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Selection Styling ── */
+::selection {
+  background-color: var(--color-gold-cta);
+  color: var(--color-dark-primary);
 }
