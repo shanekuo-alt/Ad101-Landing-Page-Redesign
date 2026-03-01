@@ -40,18 +40,18 @@ const planItems = [
 const agencyComparisons = [
   {
     dimension: "Commitment",
-    them: "Locked into monthly retainers whether campaigns perform or not",
-    us: "No retainers. You only pay when campaigns run.",
+    them: "Locked into monthly retainers before anything even happens",
+    us: "No retainers. You only pay when we start executing",
   },
   {
     dimension: "Pricing",
-    them: "Hidden until you sit through a sales call",
+    them: "Hidden until it feels awkward to say no",
     us: "Shown upfront before you commit to anything",
   },
   {
     dimension: "Strategy vs. Execution",
-    them: "Hands you a strategy deck and wishes you luck",
-    us: "Builds the plan and helps you execute it",
+    them: "Takes months of back-and-forth just to get to a plan",
+    us: "In 30 minutes, a free plan is yours regardless of whether you reach out",
   },
   {
     dimension: "Language",
@@ -67,13 +67,13 @@ const agencyComparisons = [
 
 const chatgptComparisons = [
   {
-    dimension: "What Shapes the Output",
-    them: "Whatever you type — and it tends to agree with you",
-    us: "Structured questions designed to uncover what your business actually needs",
+    dimension: "What Shapes Your Plan",
+    them: "Whatever you type on a blank canvas with no guidance, and yet it'll treat it like the law",
+    us: "Structured questions designed to guide you and help us uncover what your business actually needs",
   },
   {
     dimension: "Accountability",
-    them: "No one stands behind the advice after you close the tab",
+    them: "Typical LLMs just to please you; they'll say anything",
     us: "A real team whose revenue depends on getting it right",
   },
   {
@@ -84,12 +84,12 @@ const chatgptComparisons = [
   {
     dimension: "Execution Path",
     them: "Tells you what to do, then leaves you to figure it out",
-    us: "Builds the plan and connects you with the team to run it",
+    us: "Builds the plan and connects you with the team to run it. We have skin in the game.",
   },
   {
     dimension: "Validation",
     them: "No one checks whether the advice is actually right",
-    us: "Every plan is reviewed by marketing professionals with real experience",
+    us: "We've built systems that check with real data, and a human expert reviews it before we ever execute.",
   },
 ];
 
@@ -171,7 +171,7 @@ export default function WhatYoullGet() {
               </h3>
               <p className="mb-8 max-w-[540px] text-base leading-relaxed text-dark-text/60">
                 Your plan is built around your business&nbsp;&mdash; not a
-                template. In 15 minutes, you&rsquo;ll walk away with a complete
+                template. In 30 minutes, you&rsquo;ll walk away with a complete
                 marketing strategy covering every decision you need to make.
               </p>
               <div className="space-y-5">
@@ -248,7 +248,7 @@ export default function WhatYoullGet() {
               <blockquote className="mb-8 border-l-[3px] border-gold-cta/40 pl-5">
                 <p className="font-display text-lg italic leading-relaxed text-dark-text/70 lg:text-xl">
                   &ldquo;ChatGPT tells you what you want to hear. We ask what we
-                  need to know.&rdquo;
+                  need to know for the personalized results.&rdquo;
                 </p>
               </blockquote>
               <h3 className="mb-3 font-display text-2xl font-medium text-dark-text lg:text-[1.75rem]">

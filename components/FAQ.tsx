@@ -9,31 +9,36 @@ const faqItems = [
     question: "Is the strategy plan really free?",
     answer:
       "Yes — because we have skin in the game. We only make money if you choose to have us run your campaigns. That means your plan is built to actually work, not just to look good.",
+    link: { href: "#your-plan", label: "Learn more about what's in your plan" },
   },
   {
     question: "How long does the conversation take?",
     answer:
-      "About 15 minutes. You answer a series of structured questions about your business, your goals, and your budget. From there, we build your plan. No lengthy onboarding, no back-and-forth scheduling.",
+      "30 minutes. You answer a series of structured questions about your business, your goals, and your budget. From there, our advisor will ask questions based on your responses to fill in the gaps in information it needs. Then boom, plan generated.",
+    link: { href: "#how-it-works", label: "Learn more about how it works" },
   },
   {
     question: "What if I want to run the ads myself?",
     answer:
-      "The plan is yours to keep, no strings attached. You can take it and execute it on your own, hire someone else to run it, or come back to us when you're ready.",
+      "The plan is yours to keep, no strings attached. You can take it and execute it on your own or come back to us when you're ready.",
+    link: { href: "#your-plan", label: "Learn more about what's included" },
   },
   {
     question: "How is this different from ChatGPT?",
     answer:
       "ChatGPT gives you generic answers to whatever you type. We ask structured questions specific to your business, research your market and competitors, and build a plan backed by an execution team that can actually run it.",
+    link: { href: "#your-plan", label: "Learn more about what sets your plan apart" },
   },
   {
     question: "Do I need any marketing experience?",
     answer:
       "None. Everything is in plain English — no jargon, no acronyms, no assumed knowledge. If you can describe your business and what you want more of, you have everything you need to get started.",
+    link: { href: "#how-it-works", label: "Learn more about the process" },
   },
   {
     question: "How long until I see results?",
     answer:
-      "Most businesses see measurable results within 30 days of launching their campaigns. Performance typically peaks between 60 and 90 days as the system optimizes around what's working for your audience.",
+      "Most businesses see measurable results within 30 days of launching their campaigns. Performance typically peaks between 60 and 90 days as we optimize around what's working for your audience.",
   },
 ];
 
@@ -79,6 +84,17 @@ function FAQItem({
           >
             <p className="pb-7 pr-12 text-[15px] leading-[1.75] text-dark-text/55">
               {item.answer}
+              {item.link && (
+                <>
+                  {" "}
+                  <a
+                    href={item.link.href}
+                    className="inline-block text-green-highlight underline decoration-green-highlight/30 underline-offset-2 transition-colors hover:text-green-highlight/80 hover:decoration-green-highlight/60"
+                  >
+                    {item.link.label} →
+                  </a>
+                </>
+              )}
             </p>
           </motion.div>
         )}

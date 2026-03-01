@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { number: "20+", label: "Years in marketing" },
+  { number: "30+", label: "Years in marketing" },
   { number: "200+", label: "Campaigns managed" },
   { number: "100+", label: "Small businesses helped" },
 ];
@@ -75,7 +75,7 @@ export default function WhoIsZan() {
               viewport={{ once: true }}
             >
               <p className="text-base leading-relaxed text-dark-text/70 lg:text-lg lg:leading-relaxed">
-                Zan spent twenty years running campaigns for some of the biggest
+                Zan Ng spent thirty-plus years running campaigns for some of the biggest
                 brands in the world&nbsp;&mdash; McDonald&rsquo;s, MetLife,
                 Lowe&rsquo;s. He worked inside the rooms where companies spend
                 more on a single TV spot than most small businesses make in a
@@ -95,8 +95,8 @@ export default function WhoIsZan() {
                 So he built Ad101. One mission: give every small business owner
                 access to the same caliber of marketing strategy that Fortune
                 500 companies take for granted&nbsp;&mdash; and make it free,
-                because the business model only works when the strategy actually
-                works.
+                because small businesses deserve a shot at their dreams without
+                breaking the bank just to figure out how to do it.
               </p>
             </motion.div>
 

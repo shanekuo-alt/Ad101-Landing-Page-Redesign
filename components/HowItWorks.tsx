@@ -8,21 +8,21 @@ const steps = [
     number: "01",
     title: "Have a Conversation",
     description:
-      "Tell us about your business. Our AI advisor asks the right questions — no jargon, no forms, just a 15-minute conversation.",
+      "Tell us about your business. Our AI advisor will guide you with the right questions — no jargon, just a 30 minute conversation.",
   },
   {
     icon: FileText,
     number: "02",
     title: "Get Your Plan",
     description:
-      "Within 24 hours, receive a strategy plan built for your business, budget, and goals. It's yours to keep, no strings attached.",
+      "Right after you talk to our advisor, receive a strategy plan built for your business, budget, and goals. It's yours to keep, no strings attached.",
   },
   {
     icon: Rocket,
     number: "03",
-    title: "We Execute",
+    title: "We Promote",
     description:
-      "We run the campaigns. You see the results. You only pay when campaigns go live — because we only succeed when you do.",
+      "We run your ad campaign so you can sit back and see results.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function HowItWorks() {
             How It Works
           </span>
           <h2 className="font-display text-[clamp(1.75rem,3.5vw,2.5rem)] font-medium leading-tight text-dark-text">
-            Three Steps. No Surprises.
+            Discuss. Get Your Plan. We get your business out there.
           </h2>
         </div>
 
@@ -82,7 +82,7 @@ export default function HowItWorks() {
             </div>
 
             {/* CTA */}
-            <div className="mt-auto flex justify-center pt-10">
+            <div className="flex justify-center pt-10">
               <a
                 href="#get-plan"
                 className="inline-flex items-center justify-center rounded-full border border-gold-cta bg-gold-cta px-9 py-4 text-[18px] font-medium tracking-wide text-white transition-all duration-250 hover:bg-gold-cta/90 hover:border-gold-cta/90 active:scale-[0.97]"
