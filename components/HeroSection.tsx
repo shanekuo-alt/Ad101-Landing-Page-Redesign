@@ -100,7 +100,7 @@ export default function HeroSection() {
                 delay={2000}
                 loop={true}
                 startFull={true}
-                initialDelay={5000}
+                initialDelay={3500}
                 cursor=""
                 className=""
               />
