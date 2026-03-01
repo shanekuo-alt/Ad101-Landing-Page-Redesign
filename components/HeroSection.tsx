@@ -158,7 +158,7 @@ export default function HeroSection() {
         {/* ── Supporting copy — flush left, constrained width ── */}
         <motion.p
           style={{ color: "#2f2f2f" }}
-          className="mx-auto text-center text-[20px] leading-[1.65] lg:text-[21px] lg:leading-[1.7]"
+          className="mx-auto text-center text-[18px] leading-[1.65] lg:text-[19px] lg:leading-[1.7]"
           variants={fadeUp}
           initial="hidden"
           animate="visible"
