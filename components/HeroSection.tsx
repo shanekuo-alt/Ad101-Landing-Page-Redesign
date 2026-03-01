@@ -42,7 +42,7 @@ export default function HeroSection() {
                 alt=""
                 width={983}
                 height={221}
-                className="w-full h-auto opacity-20"
+                className="w-full h-auto opacity-[0.12]"
                 priority
               />
             </motion.div>
@@ -82,7 +82,7 @@ export default function HeroSection() {
             animate="visible"
             custom={0.15}
           >
-            <p className="font-display italic text-gold-cta text-[clamp(1.1rem,2.4vw,1.75rem)] tracking-wide">
+            <p className="font-display italic text-gold-cta text-[clamp(1.1rem,2.4vw,1.75rem)] tracking-wide opacity-70">
               Sick &amp; Tired of{" "}
               <Typewriter
                 text={[
@@ -102,7 +102,7 @@ export default function HeroSection() {
                 startFull={true}
                 initialDelay={5000}
                 cursor=""
-                className="not-italic"
+                className=""
               />
             </p>
           </motion.div>
@@ -131,7 +131,7 @@ export default function HeroSection() {
                 alt=""
                 width={983}
                 height={221}
-                className="w-full h-auto opacity-20"
+                className="w-full h-auto opacity-[0.12]"
                 priority
               />
             </motion.div>
@@ -158,15 +158,17 @@ export default function HeroSection() {
         {/* ── Supporting copy — flush left, constrained width ── */}
         <motion.p
           style={{ color: "#2f2f2f" }}
-          className="mx-auto max-w-[540px] text-center text-[20px] leading-[1.65] lg:text-[21px] lg:leading-[1.7]"
+          className="mx-auto text-center text-[20px] leading-[1.65] lg:text-[21px] lg:leading-[1.7]"
           variants={fadeUp}
           initial="hidden"
           animate="visible"
           custom={0.45}
         >
-          Tell us about your business. We&rsquo;ll build a strategy plan
-          tailored to your goals, your budget, and your
-          market&nbsp;&mdash;&nbsp;then help you run every campaign.
+          Just talk with our <span className="font-semibold">Marketing Advisor Zansei</span>
+          <br />
+          built on 30+ years of real-life business expertise &amp; empowered by AI
+          <br />
+          and share about your business.
         </motion.p>
 
         {/* ── CTA — flush left, stroke style ── */}
@@ -182,6 +184,16 @@ export default function HeroSection() {
             className="inline-flex items-center justify-center rounded-full border border-gold-cta bg-gold-cta px-9 py-4 text-[18px] font-medium tracking-wide text-white transition-all duration-250 hover:bg-gold-cta/90 hover:border-gold-cta/90 active:scale-[0.97]"
           >
             Get Your Free Plan
+          </a>
+          <a
+            href="#meet-advisor"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("meet-advisor")?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="inline-flex items-center justify-center rounded-full border border-gold-cta bg-transparent px-9 py-4 text-[18px] font-medium tracking-wide text-gold-cta transition-all duration-250 hover:bg-gold-cta/10 active:scale-[0.97]"
+          >
+            The Man Behind Zansei
           </a>
         </motion.div>
       </div>

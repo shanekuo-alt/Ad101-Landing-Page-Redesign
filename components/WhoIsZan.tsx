@@ -10,7 +10,7 @@ const stats = [
 
 export default function WhoIsZan() {
   return (
-    <section className="bg-[#FAFAFA] py-16 lg:py-[120px]">
+    <section id="meet-advisor" className="bg-[#FAFAFA] py-16 lg:py-[120px]">
       <div className="mx-auto max-w-[1280px] px-5 lg:px-[max(80px,5vw)]">
         {/* Section header */}
         <div className="mb-12 lg:mb-16">
