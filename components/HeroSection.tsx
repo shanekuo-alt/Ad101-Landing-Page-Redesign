@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Typewriter } from "@/components/ui/typewriter-text";
 
 export default function HeroSection() {
 
@@ -73,7 +74,7 @@ export default function HeroSection() {
             custom={0.1}
           />
 
-          {/* ── Middle gap — placeholder for animated text component ── */}
+          {/* ── Middle: "Sick & Tired of ___" typewriter animation ── */}
           <motion.div
             className="flex items-center justify-center py-4 lg:py-6"
             variants={fadeUp}
@@ -81,8 +82,29 @@ export default function HeroSection() {
             animate="visible"
             custom={0.15}
           >
-            {/* Future animated text component will be inserted here */}
-            <div className="h-[40px] lg:h-[56px]" />
+            <p className="font-display italic text-gold-cta text-[clamp(1.1rem,2.4vw,1.75rem)] tracking-wide">
+              Sick &amp; Tired of{" "}
+              <Typewriter
+                text={[
+                  "agencies who talk about my business like it's a case study instead of my life.",
+                  "being shown metrics without being told what they mean for me.",
+                  "the person who pitched me disappearing the second I sign.",
+                  'pretending to agencies I know what a "SEO" is.',
+                  'getting ghosted by the same people who promised me "full transparency."',
+                  "asking AI for help and getting the same answer every other business got.",
+                  "being someone's smallest account and getting treated like it.",
+                  "being sold confidence and delivered excuses.",
+                ]}
+                speed={60}
+                deleteSpeed={35}
+                delay={2000}
+                loop={true}
+                startFull={true}
+                initialDelay={5000}
+                cursor=""
+                className="not-italic"
+              />
+            </p>
           </motion.div>
 
           {/* ── Gold divider line (above bottom half) ── */}
