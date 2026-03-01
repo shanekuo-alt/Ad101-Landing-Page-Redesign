@@ -67,7 +67,7 @@ export default function HeroSection() {
 
           {/* ── Gold divider line ── */}
           <motion.div
-            className="mt-0 mb-5 h-[2px] w-full bg-gold-cta lg:mb-7"
+            className="mt-0 mb-1 h-[2px] w-full bg-gold-cta lg:mb-1"
             variants={fadeUp}
             initial="hidden"
             animate="visible"
@@ -82,7 +82,7 @@ export default function HeroSection() {
             animate="visible"
             custom={0.15}
           >
-            <p className="font-display italic text-gold-cta text-[clamp(1.1rem,2.4vw,1.75rem)] tracking-wide opacity-70">
+            <p className="font-display italic text-gold-cta text-[clamp(1.1rem,2.4vw,1.75rem)] tracking-wide opacity-[0.55]">
               Sick &amp; Tired of{" "}
               <Typewriter
                 text={[
@@ -109,7 +109,7 @@ export default function HeroSection() {
 
           {/* ── Gold divider line (above bottom half) ── */}
           <motion.div
-            className="mb-0 mt-5 h-[2px] w-full bg-gold-cta lg:mt-7"
+            className="mb-0 mt-1 h-[2px] w-full bg-gold-cta lg:mt-1"
             variants={fadeUp}
             initial="hidden"
             animate="visible"
