@@ -148,9 +148,9 @@ export default function HeroSection() {
               animate="visible"
               custom={0.2}
             >
-              And Expert Help
+              Have Experts Help
               <br />
-              Executing Your Ads
+              Execute Your Ads
             </motion.p>
           </div>
         </div>
