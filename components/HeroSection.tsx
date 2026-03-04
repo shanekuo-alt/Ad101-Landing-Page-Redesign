@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Typewriter } from "@/components/ui/typewriter-text";
 
 export default function HeroSection() {
 
@@ -24,31 +23,13 @@ export default function HeroSection() {
       className="relative flex min-h-[85vh] items-end px-5 pb-20 pt-28 lg:min-h-[90vh] lg:px-[max(80px,5vw)] lg:pb-28 lg:pt-32"
     >
       <div className="relative mx-auto w-full max-w-[1280px]">
-        {/* ── Headline block with background visuals ── */}
+        {/* ── Headline block ── */}
         <div className="mb-10 lg:mb-14">
 
-          {/* ── Top half: headline + background visual ── */}
-          <div className="relative">
-            {/* Background visual — Executive Summary document pages */}
-            <motion.div
-              className="pointer-events-none absolute right-0 bottom-0 w-[97.5%]"
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              custom={0.05}
-            >
-              <Image
-                src="/hero-top-bg.png"
-                alt=""
-                width={983}
-                height={221}
-                className="w-full h-auto opacity-[0.12]"
-                priority
-              />
-            </motion.div>
-
+          {/* ── Top headline ── */}
+          <div className="relative z-10 pb-1">
             <motion.h1
-              className="relative font-display font-semibold leading-[0.95] tracking-[-0.02em] text-[#2f2f2f]"
+              className="font-display font-semibold leading-[0.95] tracking-[-0.02em] text-[#2f2f2f]"
               style={{
                 fontSize: "clamp(2.75rem, 7.5vw, 7rem)",
                 transform: "scaleY(1.12)",
@@ -57,7 +38,7 @@ export default function HeroSection() {
               variants={fadeUp}
               initial="hidden"
               animate="visible"
-              custom={0}
+              custom={2.2}
             >
               Get a Free Personalized
               <br />
@@ -65,79 +46,86 @@ export default function HeroSection() {
             </motion.h1>
           </div>
 
-          {/* ── Gold divider line ── */}
-          <motion.div
-            className="mt-0 mb-1 h-[2px] w-full bg-gold-cta lg:mb-1"
-            variants={fadeUp}
-            initial="hidden"
-            animate="visible"
-            custom={0.1}
-          />
+          {/* ── Gold divider line (visible immediately) ── */}
+          <div className="mt-0 mb-0 h-[3px] w-full bg-gold-cta" />
 
-          {/* ── Middle: "Sick & Tired of ___" typewriter animation ── */}
-          <motion.div
-            className="flex items-center justify-center py-4 lg:py-6"
-            variants={fadeUp}
-            initial="hidden"
-            animate="visible"
-            custom={0.15}
-          >
-            <p className="font-display italic text-gold-cta text-[clamp(1.1rem,2.4vw,1.75rem)] tracking-wide opacity-[0.55]">
-              Sick &amp; Tired of{" "}
-              <Typewriter
-                text={[
-                  "agencies who talk about my business like it's a case study instead of my life.",
-                  "being shown metrics without being told what they mean for me.",
-                  "the person who pitched me disappearing the second I sign.",
-                  'pretending to agencies I know what a "SEO" is.',
-                  'getting ghosted by the same people who promised me "full transparency."',
-                  "asking AI for help and getting the same answer every other business got.",
-                  "being someone's smallest account and getting treated like it.",
-                  "being sold confidence and delivered excuses.",
-                ]}
-                speed={60}
-                deleteSpeed={35}
-                delay={2000}
-                loop={true}
-                startFull={true}
-                initialDelay={3500}
-                cursor=""
-                className=""
-              />
-            </p>
-          </motion.div>
-
-          {/* ── Gold divider line (above bottom half) ── */}
-          <motion.div
-            className="mb-0 mt-1 h-[2px] w-full bg-gold-cta lg:mt-1"
-            variants={fadeUp}
-            initial="hidden"
-            animate="visible"
-            custom={0.17}
-          />
-
-          {/* ── Bottom half: headline + background visual ── */}
+          {/* ── Visual graphic between gold lines (fades in first) ── */}
           <div className="relative">
-            {/* Background visual — phone/social media mockups */}
             <motion.div
-              className="pointer-events-none absolute left-0 top-0 w-[82.875%]"
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              custom={0.15}
+              className="w-full overflow-hidden"
+              initial={{ opacity: 0, clipPath: "inset(0 100% 0 0)" }}
+              animate={{
+                opacity: [0, 1, 1, 1],
+                clipPath: [
+                  "inset(0 100% 0 0)",
+                  "inset(0 45% 0 0)",
+                  "inset(0 45% 0 0)",
+                  "inset(0 0% 0 0)",
+                ],
+              }}
+              transition={{
+                duration: 1.8,
+                times: [0, 0.47, 0.73, 1],
+                ease: ["easeOut", "linear", "linear"],
+              }}
             >
-              <Image
-                src="/hero-bottom-bg.png"
-                alt=""
-                width={983}
-                height={221}
-                className="w-full h-auto opacity-[0.12]"
-                priority
-              />
+              <motion.div
+                initial={{ opacity: 0.5 }}
+                animate={{ opacity: 0.2 }}
+                transition={{
+                  duration: 0.3,
+                  delay: 2.36,
+                  ease: "easeOut",
+                }}
+              >
+                <Image
+                  src="/VisualGraphic_Option2C.png"
+                  alt="Strategy plan and social media visual"
+                  width={1452}
+                  height={110}
+                  className="w-full h-auto"
+                  priority
+                />
+              </motion.div>
             </motion.div>
 
+            {/* ── "Plan." overlay text ── */}
             <motion.p
-              className="relative font-display font-semibold leading-[0.95] tracking-[-0.02em] text-[#2f2f2f] text-right"
+              className="absolute inset-0 flex items-center font-display italic font-bold text-[clamp(1.1rem,2.4vw,1.75rem)] tracking-wide text-[#2f2f2f]" style={{ justifyContent: "center", paddingRight: "50%" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 1, 1, 0] }}
+              transition={{
+                duration: 1.31,
+                times: [0, 0.15, 0.7, 1],
+                ease: "linear",
+              }}
+            >
+              Plan.
+            </motion.p>
+
+            {/* ── "Advertise." overlay text ── */}
+            <motion.p
+              className="absolute inset-0 flex items-center font-display italic font-bold text-[clamp(1.1rem,2.4vw,1.75rem)] tracking-wide text-[#2f2f2f]" style={{ justifyContent: "center", paddingLeft: "50%" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 1, 1, 0] }}
+              transition={{
+                duration: 1.2,
+                delay: 1.31,
+                times: [0, 0.15, 0.75, 1],
+                ease: "linear",
+              }}
+            >
+              Advertise.
+            </motion.p>
+          </div>
+
+          {/* ── Gold divider line (visible immediately) ── */}
+          <div className="mb-0 mt-0 h-[3px] w-full bg-gold-cta" />
+
+          {/* ── Bottom headline ── */}
+          <div className="relative z-10 pt-1">
+            <motion.p
+              className="font-display font-semibold leading-[0.95] tracking-[-0.02em] text-[#2f2f2f] text-right"
               style={{
                 fontSize: "clamp(2.75rem, 7.5vw, 7rem)",
                 transform: "scaleY(1.12)",
@@ -146,9 +134,9 @@ export default function HeroSection() {
               variants={fadeUp}
               initial="hidden"
               animate="visible"
-              custom={0.2}
+              custom={2.47}
             >
-              Have Experts Help
+              Have Experts
               <br />
               Execute Your Ads
             </motion.p>
@@ -162,9 +150,9 @@ export default function HeroSection() {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          custom={0.45}
+          custom={3.33}
         >
-          Just talk with our <span className="font-semibold">Marketing Advisor Zansei</span>
+          Talk with our <span className="font-semibold">Marketing Advisor Zansei</span>
           <br />
           built on 30+ years of real-life business expertise &amp; empowered by AI
           <br />
@@ -177,13 +165,13 @@ export default function HeroSection() {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          custom={0.6}
+          custom={3.48}
         >
           <a
             href="#get-plan"
             className="inline-flex items-center justify-center rounded-full border border-gold-cta bg-gold-cta px-9 py-4 text-[18px] font-medium tracking-wide text-white transition-all duration-250 hover:bg-gold-cta/90 hover:border-gold-cta/90 active:scale-[0.97]"
           >
-            Get Your Free Plan
+            Get Your Plan
           </a>
           <a
             href="#meet-advisor"

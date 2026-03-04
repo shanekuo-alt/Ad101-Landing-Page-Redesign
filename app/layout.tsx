@@ -17,9 +17,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Ad101 — Get a Free Personalized Strategy Plan",
+  title: "Ad101 | Get a Free Personalized Strategy Plan",
   description:
-    "Get a custom advertising strategy plan built for your business, budget, and goals — plus expert help executing it. Free. No credit card. Ready in 15 minutes.",
+    "Get a custom advertising strategy plan built for your business, budget, and goals, plus expert help executing it. Free. No credit card. Ready in 15 minutes.",
 };
 
 export default function RootLayout({

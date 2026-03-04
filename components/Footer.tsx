@@ -38,7 +38,7 @@ export default function Footer() {
             href="#get-plan"
             className="inline-flex items-center justify-center rounded-full bg-gold-cta px-10 py-4.5 text-[20px] font-semibold text-dark-primary transition-all duration-200 hover:brightness-110 hover:scale-[1.02] active:scale-[0.98]"
           >
-            Get Your Free Plan
+            Get Your Plan
           </a>
         </motion.div>
         <motion.p

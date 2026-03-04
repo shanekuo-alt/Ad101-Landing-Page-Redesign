@@ -8,7 +8,7 @@ const faqItems = [
   {
     question: "Is the strategy plan really free?",
     answer:
-      "Yes — because we have skin in the game. We only make money if you choose to have us run your campaigns. That means your plan is built to actually work, not just to look good.",
+      "Yes, because we have skin in the game. We only make money if you choose to have us run your campaigns. That means your plan is built to actually work, not just to look good.",
     link: { href: "#your-plan", label: "Learn more about what's in your plan" },
   },
   {
@@ -32,7 +32,7 @@ const faqItems = [
   {
     question: "Do I need any marketing experience?",
     answer:
-      "None. Everything is in plain English — no jargon, no acronyms, no assumed knowledge. If you can describe your business and what you want more of, you have everything you need to get started.",
+      "None. Everything is in plain English. No jargon, no acronyms, no assumed knowledge. If you can describe your business and what you want more of, you have everything you need to get started.",
     link: { href: "#how-it-works", label: "Learn more about the process" },
   },
   {

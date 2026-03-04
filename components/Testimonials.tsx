@@ -11,13 +11,13 @@ const testimonials = [
     role: "Owner, Santos Bakery & Cafe",
   },
   {
-    text: "I was skeptical about 'free strategy' — figured there'd be a catch. There wasn't. Zan's team gave me a real plan with actual data behind it. The programmatic ads have been running for three months and the results speak for themselves.",
+    text: "I was skeptical about 'free strategy.' Figured there'd be a catch. There wasn't. Zan's team gave me a real plan with actual data behind it. The programmatic ads have been running for three months and the results speak for themselves.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     name: "David Kim",
     role: "Founder, Greenline Landscaping",
   },
   {
-    text: "As a solo business owner I don't have time to learn ad platforms. Ad101 handled everything — targeting, creative, optimization. I just watch the leads come in.",
+    text: "As a solo business owner I don't have time to learn ad platforms. Ad101 handled everything: targeting, creative, optimization. I just watch the leads come in.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
     name: "Rachel Torres",
     role: "Owner, Torres Physical Therapy",
@@ -35,7 +35,7 @@ const testimonials = [
     role: "Founder, Spotless Pro Cleaning",
   },
   {
-    text: "They didn't just run ads — they explained why certain channels would work for my business and backed it with data. First time I've felt like I understand my own marketing.",
+    text: "They didn't just run ads. They explained why certain channels would work for my business and backed it with data. First time I've felt like I understand my own marketing.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
     name: "Marcus Johnson",
     role: "Owner, Johnson's HVAC",

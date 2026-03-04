@@ -60,7 +60,7 @@ export default function WhoIsZan() {
                 href="#get-plan"
                 className="inline-flex items-center justify-center rounded-full border border-gold-cta bg-gold-cta px-9 py-4 text-[18px] font-medium tracking-wide text-white transition-all duration-250 hover:bg-gold-cta/90 hover:border-gold-cta/90 active:scale-[0.97]"
               >
-                Get Your Free Plan
+                Get Your Plan
               </a>
             </div>
           </motion.div>

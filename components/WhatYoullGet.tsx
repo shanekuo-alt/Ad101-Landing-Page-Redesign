@@ -13,7 +13,7 @@ const planItems = [
   {
     title: "Where to Advertise",
     description:
-      "The specific platforms and channels that make sense for your business, your audience, and your budget — not a generic list.",
+      "The specific platforms and channels that make sense for your business, your audience, and your budget. Not a generic list.",
   },
   {
     title: "How Much to Spend Where",
@@ -23,7 +23,7 @@ const planItems = [
   {
     title: "Who to Reach",
     description:
-      "The specific people most likely to become your customers — defined in language you actually understand.",
+      "The specific people most likely to become your customers, defined in language you actually understand.",
   },
   {
     title: "What Your Competitors Are Doing",
@@ -33,7 +33,7 @@ const planItems = [
   {
     title: "Your 90-Day Action Calendar",
     description:
-      "A step-by-step timeline of what to do, when to do it, and in what order — so the plan doesn't just sit there.",
+      "A step-by-step timeline of what to do, when to do it, and in what order, so the plan doesn't just sit there.",
   },
 ];
 
@@ -324,7 +324,7 @@ export default function WhatYoullGet() {
                 href="#get-plan"
                 className="inline-flex items-center justify-center rounded-full border border-gold-cta bg-gold-cta px-9 py-4 text-[18px] font-medium tracking-wide text-white transition-all duration-250 hover:bg-gold-cta/90 hover:border-gold-cta/90 active:scale-[0.97]"
               >
-                Get Your Free Plan
+                Get Your Plan
               </a>
             </div>
           </div>

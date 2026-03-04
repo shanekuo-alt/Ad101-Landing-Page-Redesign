@@ -195,7 +195,7 @@ export default function FunnelSection() {
                 <Image
                   key={src}
                   src={src}
-                  alt="Zansei — Ad101 AI Advisor"
+                  alt="Zansei, Ad101 AI Advisor"
                   width={440}
                   height={440}
                   className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-300 ${
@@ -220,7 +220,7 @@ export default function FunnelSection() {
           >
             <Image
               src="/zansei/Zansei_Hoverv2_Base.png"
-              alt="Zansei — Ad101 AI Advisor"
+              alt="Zansei, Ad101 AI Advisor"
               width={440}
               height={440}
               className="h-full w-full object-contain"
